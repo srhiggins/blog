@@ -1,0 +1,15 @@
+%h1= @title
+
+<%= form_for :post, url: posts_p do |f| %>
+
+%p
+	<%= f.label :title %> %br
+	<%= f.text_field :title %>
+
+%p
+	<%= f.label :text %> %p
+	<%= f.text_area :text %> %p
+
+%p
+	<%= f.submit %>
+
